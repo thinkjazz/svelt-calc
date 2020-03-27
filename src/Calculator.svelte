@@ -1,27 +1,34 @@
 
 <div>
-<input bind:value={a} type="number">
-<select bind:value={operation}>
-	{#each operationArr as value }
-		<option value={value}>{value}</option>
-	
-	{/each}
+{#each values as value, i}
+	{#if i > 0}
+ <Operations bind:value={operationArr[i-1]} />
+	{/if}
+	<input bind:value={value} type="number">
+{/each}
 
-	</select>
-	<input bind:value={b}  type="number">
 	<b>= {result}</b>
-</div>
-{a} {operation} {b}
-<script>
-	import { calc } from './helpers.js'
-	let a = 0;
-	let b = 0;
-	let operationArr = ['+', '-', '*', '/'];
-	let operation = operationArr[0];
-	let result = 0; 
 	
-	$: result = calc(a, b, operation);
+		<button on:click={add}>
+		 Add value
+	</button>
+</div>
+
+<script>
+	
+	import Operations from './Operations.svelte';
+	import { calculate } from './helpers.js';
+	
+		let values = [0];
+		let operationArr = [];
+		let result = 0; 
+	function add() {
+		values = [...values, 0]
+ 	}
+	
+	$: result = calculate(values, operationArr );
+		export { result }
 </script>
 <style>
-
-</style>
+	div {border: 1px solid red; padding:10px; color: red}
+</style> 
