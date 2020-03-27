@@ -2,3 +2,8 @@
 /public/build/
 
 .DS_Store
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/svelte-app.iml
+/.idea/vcs.xml
