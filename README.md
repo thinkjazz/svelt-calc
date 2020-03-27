@@ -1,24 +1,26 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+Хелпер отсюда https://youtu.be/I5DIcbcXzfE?t=2637
+
+*Ищете шаблон разделяемых компонентов? Иди сюда --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
 
 # svelte app
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+Это шаблон проекта для приложений [Svelte](https://svelte.dev). Он живет по адресу https://github.com/sveltejs/template.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+Для создания нового проекта на основе этого шаблона используйте [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
 npx degit sveltejs/template svelte-app
 cd svelte-app
 ```
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+*Пометьте, что у вас должен быть установлен [Node.js](https://nodejs.org).*
 
 
-## Get started
+## Приступайте
 
-Install the dependencies...
+Установите зависимости...
 
 ```bash
 cd svelte-app
@@ -31,27 +33,27 @@ npm install
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Перейдите на [localhost:5000](http://localhost:5000). Вы должны увидеть, что ваше приложение работает. Отредактируйте файл компонента в `src`, сохраните его и перезагрузите страницу, чтобы увидеть свои изменения.
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+По умолчанию сервер будет отвечать только на запросы localhost. Чтобы разрешить соединения с другими компьютерами, отредактируйте команды `sirv` в package.json, чтобы включить опцию `--host 0.0.0.0
 
 
-## Building and running in production mode
+## Строительство и работа в производственном режиме
 
-To create an optimised version of the app:
+Для создания оптимизированной версии прилож
 
 ```bash
 npm run build
 ```
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+Вы можете запустить только что построенное приложение с `npm run start`. При этом используется [sirv](https://github.com/lukeed/sirv), который включен в ваш пакет.json's `dependencies`, так что приложение будет работать, когда вы устанавливаете его на такие платформы, как [Heroku](https://heroku.com).
 
 
-## Single-page app mode
+## Одностраничный режим приложения
 
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
+По умолчанию, sirv будет отвечать только на те запросы, которые соответствуют файлам в `публичном варианте`. Это делается для максимальной совместимости со статическими файловыми серверами, позволяя вам развернуть ваше приложение где угодно.
 
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
+Если вы создаете одностраничное приложение (SPA) с несколькими маршрутами, sirv должен быть способен отвечать на запросы для *любого* пути. Вы можете сделать это, отредактировав команду `"start"` в package.json:
 
 ```js
 "start": "sirv public --single"
@@ -62,30 +64,30 @@ If you're building a single-page app (SPA) with multiple routes, sirv needs to b
 
 ### With [now](https://zeit.co/now)
 
-Install `now` if you haven't already:
+Установите  `now`  если вы еще этого не сделали:
 
 ```bash
 npm install -g now
 ```
 
-Then, from within your project folder:
+Затем, из папки вашего проекта:
 
 ```bash
 cd public
 now deploy --name my-project
 ```
 
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
+В качестве альтернативы, используйте [Now desktop client](https://zeit.co/download) и просто перетащите распакованную папку проекта на иконку панели задач.
 
 ### With [surge](https://surge.sh/)
 
-Install `surge` if you haven't already:
+Установите `surge`, если вы еще этого не сделали:
 
 ```bash
 npm install -g surge
 ```
 
-Then, from within your project folder:
+Затем, из папки вашего проекта:
 
 ```bash
 npm run build
